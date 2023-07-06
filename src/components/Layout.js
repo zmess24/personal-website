@@ -4,7 +4,7 @@ import Header from "./Header";
 import Footer from "./Footer.js";
 import Dropdown from "./Dropdown";
 import Video from "./Video";
-import { useSiteMetadata } from "../hooks/use-site-metadata";
+import { useSiteMetadata } from "../hooks/useSiteMetaData";
 
 const Layout = ({ children }) => {
 	let [dropDownState, setDropDownState] = useState(false);

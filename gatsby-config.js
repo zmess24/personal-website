@@ -3,13 +3,17 @@
  */
 module.exports = {
 	siteMetadata: {
-		title: `ZDM Personal Site`,
-		siteUrl: `https://www.yourdomain.tld`,
+		siteUrl: "https://www.yourdomain.tld",
+		title: "ZDM Portfolio",
+		description: "Personal Website for Zac Messinger",
+		linkedIn: "https://www.linkedin.com/in/zacmessinger/",
+		github: "https://github.com/zmess24",
 	},
 	plugins: [
 		"gatsby-plugin-postcss",
 		"gatsby-plugin-image",
 		"gatsby-plugin-sharp",
+		"gatsby-transformer-sharp",
 		"gatsby-plugin-sitemap",
 		{
 			resolve: "gatsby-plugin-manifest",
@@ -25,12 +29,11 @@ module.exports = {
 			},
 		},
 		"gatsby-plugin-mdx",
-		"gatsby-transformer-sharp",
 		{
 			resolve: "gatsby-source-filesystem",
 			options: {
 				name: "images",
-				path: "./src/assets/images/",
+				path: `${__dirname}/src/assets/images/`,
 			},
 			__key: "images",
 		},

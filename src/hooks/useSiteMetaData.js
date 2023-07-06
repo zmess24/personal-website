@@ -1,30 +1,18 @@
-// import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 
-// export const useSiteMetadata = () => {
-// 	const { site } = useStaticQuery(
-// 		graphql`
-// 			query SiteMetaData {
-// 				site {
-// 					siteMetadata {
-// 						github
-// 						linkedIn
-// 						projects {
-// 							name
-// 							data {
-// 								title
-// 								description
-// 								technologies
-// 								date
-// 								image
-// 								link
-// 								github
-// 							}
-// 						}
-// 					}
-// 				}
-// 			}
-// 		`
-// 	);
+export const useSiteMetadata = () => {
+	const { site } = useStaticQuery(
+		graphql`
+			query SiteMetaData {
+				site {
+					siteMetadata {
+						github
+						linkedIn
+					}
+				}
+			}
+		`
+	);
 
-// 	return site.siteMetadata;
-// };
+	return site.siteMetadata;
+};
