@@ -11,7 +11,7 @@ const Card = ({ data: { frontmatter } }) => {
 				<a className="image is-4by3" href={frontmatter.link} target="_blank" rel="noreferrer"></a>
 			</section> */}
 			<a href={frontmatter.link} target="_blank" rel="noreferrer">
-				<GatsbyImage className="card-image " image={image} />
+				<GatsbyImage className="card-image " alt="image" image={image} />
 			</a>
 			<section className="card-content">
 				<h6 className="subtitle is-6">{frontmatter.title}</h6>

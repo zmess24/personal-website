@@ -1,5 +1,4 @@
 import * as React from "react";
-// import { StaticImage } from 'gatsby-plugin-image';
 
 const Header = ({ dropDownState, handleClick }) => {
 	let classNames = dropDownState ? "alternate" : "";

@@ -1,9 +1,13 @@
 .card {
-	width: 360px;
+	width: 400px;
 	height: auto;
 	margin: 20px;
 	max-width: 360px;
 	transition: all 0.2s ease-in-out;
+}
+
+.card-image {
+	height: 175px;
 }
 
 .card-content {
@@ -56,8 +60,26 @@
 	}
 }
 
-@media (max-width: 580px) {
-	.card {
+@media (max-width: 1250px) {
+	.dropdown ul li {
+		width: 33%;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 1150px) {
+	.dropdown ul li {
+		width: 50%;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 880px) {
+	.dropdown ul li {
 		width: 100%;
+		display: flex;
+		justify-content: center;
 	}
 }
