@@ -1,5 +1,5 @@
 import * as React from "react";
-import "../styles/global.css";
+import "../stylesheets/master.scss";
 import Layout from "../components/Layout";
 
 const IndexPage = () => {

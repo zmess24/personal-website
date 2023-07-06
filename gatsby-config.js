@@ -10,7 +10,7 @@ module.exports = {
 		github: "https://github.com/zmess24",
 	},
 	plugins: [
-		"gatsby-plugin-postcss",
+		"gatsby-plugin-sass",
 		"gatsby-plugin-image",
 		"gatsby-plugin-sharp",
 		"gatsby-transformer-sharp",

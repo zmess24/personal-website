@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
 				<Header dropDownState={dropDownState} handleClick={handleToggle} />
 				<Dropdown dropDownState={dropDownState} data={dropDownData} handleClick={handleToggle} />
 				<section>{children}</section>
-				<Footer socialMedia={{ github, linkedIn }} />
+				{/* <Footer socialMedia={{ github, linkedIn }} /> */}
 			</main>
 		</Fragment>
 	);
