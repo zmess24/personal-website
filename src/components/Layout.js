@@ -1,5 +1,4 @@
 import React, { Fragment, useState } from "react";
-import "../utils/fontawesome";
 import Header from "./Header";
 import Footer from "./Footer.js";
 import Dropdown from "./Dropdown";
@@ -14,7 +13,7 @@ const Layout = ({ children }) => {
 	let handleToggle = (e) => {
 		e.preventDefault();
 		if (e.target.title === "open") {
-			let data = e.target.textContent === "Projects" ? projects : { name: "Blogs", data: [] };
+			let data = e.target.textContent === "Projects" ? { name: "Projects", data: projects } : { name: "Blogs", data: [] };
 			setDropDownData(data);
 		}
 		setDropDownState(!dropDownState);

@@ -1,7 +1,7 @@
 import { useStaticQuery, graphql } from "gatsby";
 
 export const useSiteMetadata = () => {
-	const { site } = useStaticQuery(
+	const { site, allMdx } = useStaticQuery(
 		graphql`
 			query SiteMetaData {
 				site {
@@ -10,9 +10,27 @@ export const useSiteMetadata = () => {
 						linkedIn
 					}
 				}
+				allMdx(sort: { frontmatter: { date: ASC } }) {
+					nodes {
+						frontmatter {
+							date
+							title
+							description
+							technologies
+							date
+							link
+							image {
+								childImageSharp {
+									gatsbyImageData
+								}
+							}
+							github
+						}
+					}
+				}
 			}
 		`
 	);
 
-	return site.siteMetadata;
+	return { ...site.siteMetadata, projects: [...allMdx.nodes] };
 };
