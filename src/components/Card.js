@@ -1,15 +1,18 @@
 import * as React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const Card = ({ data: { frontmatter } }) => {
-	debugger;
+	const image = getImage(frontmatter.image);
+
 	return (
 		<main className="card">
-			<section className="card-image">
-				<a className="image is-4by3" href={frontmatter.link} target="_blank" rel="noreferrer">
-					{/* <img src={frontmatter.image} alt="Placeholder" /> */}
-				</a>
-			</section>
+			{/* <section className="card-image">
+				<a className="image is-4by3" href={frontmatter.link} target="_blank" rel="noreferrer"></a>
+			</section> */}
+			<a href={frontmatter.link} target="_blank" rel="noreferrer">
+				<GatsbyImage className="card-image " image={image} />
+			</a>
 			<section className="card-content">
 				<h6 className="subtitle is-6">{frontmatter.title}</h6>
 				<p>{frontmatter.description}</p>

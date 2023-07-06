@@ -6,7 +6,7 @@ import Layout from "../components/Layout";
 const IndexPage = () => {
 	return (
 		<Layout>
-			<h1>This is a body</h1>
+			<h1>Zachary Messinger</h1>
 		</Layout>
 	);
 };
