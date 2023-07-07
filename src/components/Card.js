@@ -6,7 +6,7 @@ const Card = ({ data: { frontmatter } }) => {
 	const image = getImage(frontmatter.image);
 
 	return (
-		<main className="card">
+		<main className="card" key={frontmatter.title}>
 			{/* <section className="card-image">
 				<a className="image is-4by3" href={frontmatter.link} target="_blank" rel="noreferrer"></a>
 			</section> */}

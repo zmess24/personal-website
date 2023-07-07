@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
 			<main className="wrapper">
 				<Header dropDownState={dropDownState} handleClick={handleToggle} />
 				<Dropdown dropDownState={dropDownState} data={dropDownData} handleClick={handleToggle} />
-				<section>{children}</section>
+				<section className="banner">{children}</section>
 				<Footer socialMedia={{ github, linkedIn }} />
 			</main>
 		</Fragment>

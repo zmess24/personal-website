@@ -16,7 +16,7 @@ const Dropdown = ({ dropDownState, data, handleClick }) => {
 					</section>
 					<section className="navbar-item navbar-brand">
 						{/* <StaticImage alt="Logo" src="../images/logo_2.png" /> */}
-						<a href="/">ZDM</a>
+						<a href="/">Zachary Messinger</a>
 					</section>
 				</header>
 			</nav>
