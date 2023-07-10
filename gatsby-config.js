@@ -3,7 +3,7 @@
  */
 module.exports = {
 	siteMetadata: {
-		siteUrl: "https://www.yourdomain.tld",
+		siteUrl: "zacmessinger.com",
 		title: "ZDM Portfolio",
 		description: "Personal Website for Zac Messinger",
 		linkedIn: "https://www.linkedin.com/in/zacmessinger/",
