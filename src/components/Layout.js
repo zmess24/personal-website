@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
 	};
 
 	return (
-		<Fragment>
+		<div id="container">
 			<Video />
 			<main className="wrapper">
 				<Header dropDownState={dropDownState} handleClick={handleToggle} />
@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
 				<section className="banner">{children}</section>
 				<Footer socialMedia={{ github, linkedIn }} />
 			</main>
-		</Fragment>
+		</div>
 	);
 };
 
