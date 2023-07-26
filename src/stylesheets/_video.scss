@@ -5,7 +5,7 @@
 	min-width: 100%;
 	min-height: 100%;
 	object-fit: cover;
-	background: black;
+	animation: fadeIn 1s forwards;
 }
 
 .wrapper {
@@ -13,4 +13,14 @@
 	justify-content: space-between;
 	flex-direction: column;
 	height: 100vh;
+	background-color: black;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
