@@ -8,6 +8,7 @@ export const useSiteMetadata = () => {
 					siteMetadata {
 						github
 						linkedIn
+						kaggle
 					}
 				}
 				allMdx(sort: { frontmatter: { date: ASC } }) {

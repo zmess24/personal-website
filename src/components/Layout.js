@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer.js";
 import Dropdown from "./Dropdown";
@@ -8,7 +8,7 @@ import { useSiteMetadata } from "../hooks/useSiteMetaData";
 const Layout = ({ children }) => {
 	let [dropDownState, setDropDownState] = useState(false);
 	let [dropDownData, setDropDownData] = useState({ name: "", data: [] });
-	const { github, linkedIn, projects } = useSiteMetadata();
+	const { github, linkedIn, kaggle, projects } = useSiteMetadata();
 
 	let handleToggle = (e) => {
 		e.preventDefault();
@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
 				<Header dropDownState={dropDownState} handleClick={handleToggle} />
 				<Dropdown dropDownState={dropDownState} data={dropDownData} handleClick={handleToggle} />
 				<section className="banner">{children}</section>
-				<Footer socialMedia={{ github, linkedIn }} />
+				<Footer socialMedia={{ github, linkedIn, kaggle }} />
 			</main>
 		</div>
 	);

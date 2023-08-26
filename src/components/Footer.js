@@ -12,6 +12,9 @@ const Footer = ({ socialMedia }) => {
 					<a href={socialMedia.github} target="_blank" rel="noreferrer">
 						<FontAwesomeIcon size="lg" icon={["fab", "github"]} />
 					</a>
+					<a href={socialMedia.kaggle} target="_blank" rel="noreferrer">
+						<FontAwesomeIcon size="lg" icon={["fab", "kaggle"]} />
+					</a>
 				</section>
 			</header>
 		</nav>

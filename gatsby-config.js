@@ -8,6 +8,7 @@ module.exports = {
 		description: "Personal Website for Zac Messinger",
 		linkedIn: "https://www.linkedin.com/in/zacmessinger/",
 		github: "https://github.com/zmess24",
+		kaggle: "https://www.kaggle.com/zacharymessinger",
 	},
 	plugins: [
 		"gatsby-plugin-sass",
